@@ -1,0 +1,74 @@
+header{
+    background-color: aliceblue; 
+    position: sticky; top: 0; 
+    display: flex; flex-direction: 
+    row; justify-content: space-between;
+}
+
+.d-block{
+    display: block;
+}
+
+#plava{
+    display: flex; 
+    flex-direction: row;
+}
+
+body{
+    margin: 0; 
+    padding: 0.3rem;
+}
+
+.w-100{
+    width:100%
+}
+
+.w-50{
+    width:50%
+}
+
+
+.b-0{
+    border:0;
+}
+
+/* izmanto, ja vajag atlasīt visus parametrus*/
+*{
+    font-family: "Lucida Console", Helvetica, sans-serif;y
+}
+
+element.style{
+    border-style: double;
+}
+
+.d-flex-f-d-row {
+    display: flex;
+    flex-direction: row;
+}
+
+#vasara {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+footer{
+    text-align: center;
+    border-style: solid;
+    display: block;
+    background-color: grey;
+}
+
+main{
+    margin: 2rem;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+space {
+   
+}
+
+@media only screen and (max-width:600px);
+
+
+

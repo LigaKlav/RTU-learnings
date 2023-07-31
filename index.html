@@ -5,13 +5,13 @@
     <title>HTML&CSS</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css" />
 </head>
 
-<body style="margin: 0; padding: 0;">
+<body>
 
     <!-- Header -->
-    <header
-        style="background-color: aliceblue; position: sticky; top: 0; display: flex; flex-direction: row; justify-content: space-between;">
+    <header class="space">
         <a href="#pavasaris">Šeit ir virsraksts, kurš paliek galvenes daļā.</a>
         <div>
             <a href="#vasara">Vasara</a>
@@ -19,64 +19,80 @@
         </div>
     </header>
 
-    <div id="pavasaris">
-        <img src="resources/Pavasaris.jpg" alt="Pavasaris">
-    </div>
-    <h1>Pavasaris</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quia optio temporibus pariatur ea maxime
-        voluptatum laborum iste, quo tempora impedit similique in atque deleniti rerum consequuntur, facilis repellat
-        amet.</p>
-    </div>
-    <div id="vasara">
-        <img src="resources/Vasara.jpg" alt="Vasara">
-        <h1>Šeit ir apraksts, kuram ir jāatrodas bildei kreisajā pusē.</h1><br>
-    </div>
-
-    <div id="plava" style="display: flex; flex-direction: row;">
-        <div style="display: block;">
-            <img style="display: block; width:100%" src="resources/Plava.jpg" alt="Plava">
+    <img class="w-100" src="resources/Pavasaris.jpg" alt="Pavasaris">
+    <hr>
+    <main>
+        <div id="pavasaris" class="d-flex-f-d-row">
+            <img class="w-50" src="resources/Pavasaris.jpg" alt="Pavasaris">
+            <div>
+                <h1>Pavasaris</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quia optio temporibus pariatur ea
+                    maxime
+                    voluptatum laborum iste, quo tempora impedit similique in atque deleniti rerum consequuntur, facilis
+                    repellat
+                    amet.</p>
+            </div>
         </div>
-        <div style="display: block;">
-            <h1>Šeit apraksts, kuram ir jāatrodas bildes labajā pusē.</h1>
+        <hr> <!--nodalošā svītra-->
+        <div id="vasara">
+            <img class="w-50" src="resources/Vasara.jpg" alt="Vasara">
+            <div>
+                <h1>Šeit ir apraksts, kuram ir jāatrodas bildei kreisajā pusē.</h1><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum exercitationem labore ratione quod,
+                    est in
+                    saepe
+                    enim voluptate, vitae soluta unde quia iure ab, non alias molestiae praesentium! Nulla, iure.</p>
+            </div>
         </div>
-    </div>
+        <hr>
+        <div id="plava" class="d-flex-f-d-row">
+            <img class="w-50" src="resources/Plava.jpg" alt="Plava">
+            <div>
+                <h1>Šeit apraksts, kuram ir jāatrodas bildes labajā pusē.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae reiciendis quis consequatur
+                    architecto
+                    quam soluta, ratione repellat quaerat tenetur, aut nobis, dolorem quae quidem at vitae nam ex dolor.
+                </p>
+            </div>
+        </div>
 
-    <!-- Exercises -->
-    <div id="exercises">
-        <h1>Uzdevumi</h1>
-        <ul>
-            <li>Nomaini visiem tekstiem fontu.</p>
-            <li>Sakārto bilžu un tekstu novietojumu.</p>
-            <li>Pieliec tekstu zem virsrakstiem.</p>
-            <li>Pārtaisi uzdevumu sadaļu, izmantojot HTML atbilstošu tagu, lai izveidotu sarakstu.</p>
-            <li>Pieliec stilu header daļai, lai tā atgādinātu header.</p>
-            <li>Pieliec stilu footer daļai, lai teksts būtu centrā un elements izskatītos pēc footer.</p>
-            <li>Augšējo bildi formatē tā, lai tiktu aizņemts viss ekrāna platums.</p>
-            <li>Pievieno karti.</p>
-            <li>Pievieno tabulu, kurai būtu vismaz 2 kolonnas un 3 rindas.</p>
-        </ul>
-    </div>
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17407.749239289253!2d24.14387995!3d56.9493383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfc0fe49da7f%3A0x1dd934621a704256!2sVERSALE!5e0!3m2!1slv!2slv!4v1690393751098!5m2!1slv!2slv"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <table>
-        <tr>
-            <th>Person 1</th>
-            <th>Person 2</th>
-            <th>Person 3</th>
-        </tr>
-        <tr>
-            <td>Emil</td>
-            <td>Tobias</td>
-            <td>Linus</td>
-        </tr>
-        <tr>
-            <td>16</td>
-            <td>14</td>
-            <td>10</td>
-        </tr>
-    </table>
+        <!-- Exercises -->
+        <div id="exercises">
+            <h1>Uzdevumi</h1>
+            <ul>
+                <li>Nomaini visiem tekstiem fontu.</p>
+                <li>Sakārto bilžu un tekstu novietojumu.</p>
+                <li>Pieliec tekstu zem virsrakstiem.</p>
+                <li>Pārtaisi uzdevumu sadaļu, izmantojot HTML atbilstošu tagu, lai izveidotu sarakstu.</p>
+                <li>Pieliec stilu header daļai, lai tā atgādinātu header.</p>
+                <li>Pieliec stilu footer daļai, lai teksts būtu centrā un elements izskatītos pēc footer.</p>
+                <li>Augšējo bildi formatē tā, lai tiktu aizņemts viss ekrāna platums.</p>
+                <li>Pievieno karti.</p>
+                <li>Pievieno tabulu, kurai būtu vismaz 2 kolonnas un 3 rindas.</p>
+            </ul>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17407.749239289253!2d24.14387995!3d56.9493383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfc0fe49da7f%3A0x1dd934621a704256!2sVERSALE!5e0!3m2!1slv!2slv!4v1690393751098!5m2!1slv!2slv"
+            width="600" height="450" class=b-0 allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <table>
+            <tr>
+                <th>Person 1</th>
+                <th>Person 2</th>
+                <th>Person 3</th>
+            </tr>
+            <tr>
+                <td>Emil</td>
+                <td>Tobias</td>
+                <td>Linus</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>14</td>
+                <td>10</td>
+            </tr>
+        </table>
+    </main>
     <!-- Footer -->
     <footer>
         <p>Šeit ir tukšs footers</p>
